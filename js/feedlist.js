@@ -541,6 +541,7 @@ function catchupFeed(feed, is_cat) {
 								child.removeClassName("Unread");
 							}
 						);
+						updateFeedList();
 					}
 
 					var show_next_feed = getInitParam("on_catchup_show_next_feed") == "1";
